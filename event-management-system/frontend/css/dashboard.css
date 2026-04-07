@@ -1,0 +1,97 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #000;
+  color: white;
+}
+
+/* 🔝 Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #000, #1a1a1a);
+  border-bottom: 1px solid #FFD700;
+  z-index: 1000;
+}
+
+.navbar h2 {
+  color: #FFD700;
+}
+
+.navbar button {
+  padding: 8px 15px;
+  background: #FFD700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar button:hover {
+  background: #C6FF00;
+}
+
+/* 🎨 Header Gradient (ONLY ONCE) */
+.header {
+  background: linear-gradient(
+    to bottom,
+    #FFD700 0%,
+    #e6c200 40%,
+    #000000 100%
+  );
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.header h1 {
+  color: white;
+}
+
+/* 📦 Events Grid */
+#events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  margin-top: -40px;
+}
+
+/* 🧱 Cards */
+.card {
+  background: #111;
+  border: 1px solid #FFD700;
+  border-radius: 12px;
+  padding: 15px;
+  transition: 0.3s;
+  position: relative;
+}
+
+/* ✨ Glow effect */
+.card:hover {
+  box-shadow: 0 0 15px #FFD700, 0 0 30px rgba(255, 215, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #FFD700;
+}
+
+/* Button */
+.card button {
+  margin-top: 10px;
+  padding: 8px;
+  background: #FFD700;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #C6FF00;
+}
